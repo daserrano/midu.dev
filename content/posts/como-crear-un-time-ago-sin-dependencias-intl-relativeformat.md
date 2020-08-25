@@ -82,7 +82,7 @@ const getSecondsDiff = (timestamp) => {
 }
 ```
 
-Ahora ya sabemos la diferencia en segundos entre las dos fechas. Ahora, **necesitamos conocer si esa diferencia de segundos tiene sentido expresarlo como segundos, minutos, días, horas...** Porque si la diferencia es de 90 segundos, por ejemplo, lo interesante sería saber que queremos expresar que "Hace 1 minuto" pero si son más de 3600 segundos ya estaríamos hablando de horas y no tendría expresarlo en minutos.
+Ahora ya sabemos la diferencia en segundos entre las dos fechas. Ahora, **necesitamos conocer si esa diferencia de segundos tiene sentido expresarlo como segundos, minutos, días, horas...** Porque si la diferencia es de 90 segundos, por ejemplo, lo interesante sería saber que queremos expresar que "Hace 1 minuto" pero si son más de 3600 segundos ya estaríamos hablando de horas y no tendría sentido expresarlo en minutos.
 
 Para saber qué unidad tenemos que usar, empezaremos por tener un **diccionario** que nos indique el número de segundos que hay en las diferentes unidades que queremos controlar con el TimeAgo. Por ejemplo, **un día tiene 86400 segundos.**
 
